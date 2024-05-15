@@ -18,25 +18,23 @@
       if ($order) {
         // 昇順
         sort($array);
+        echo "昇順にソートします。<br>";
       } else {
         // 降順
         rsort($array);
+        echo "降順にソートします。<br>";
+      }
+      // ソート結果を表示
+      foreach ($array as $num) {
+        echo $num . "<br>";
       }
     }
 
-    // 昇順ソートを表示
-    echo "昇順にソートします。<br>";
+    // 昇順ソート
     sort_2way($nums, true);
-    foreach ($nums as $num) {
-      echo $num . "<br>";
-    }
 
-    // 降順ソートを表示
-    echo "降順にソートします。<br>";
+    // 降順ソート
     sort_2way($nums, false);
-    foreach ($nums as $num) {
-      echo $num . "<br>";
-    }
     ?>
   </p>
 </body>
